@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+body{
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+}
+
+.left{
+    width: 50%;
+    margin: auto;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    max-width: 500px;
+}
+
+.left p{
+    color: white;
+    font-size: larger;
+}
+
+.presentation{
+    max-width: 700px ;
+    margin: auto;
+}
+
+.right{
+    width: 50%;
+    margin: auto;
+}
+
+.inscription{
+    max-width: 700px;
+}
+
+.header{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 15px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+form{
+    background-color: white;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.input-bloc{
+    position: relative;
+}
+
+input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-weight: 600;
+    outline: none;
+    padding: 25px;
+    margin: 15px auto;
+}
+
+/* If error: border should be red and error icon should appear */
+
+input:focus{
+    border: 1px solid hsl(249, 10%, 26%);
+}
+
+::placeholder {
+    color: hsl(249, 10%, 26%);
+    opacity: 0.8;
+}
+
+.error-icon{
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    display: none;
+}
+
+small {
+    font-style: italic;
+    font-size: 14px;
+    right: 0;
+    display: block;
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: hsl(0, 100%, 74%);
+    display: none;
+}
+
+/* box-shadow doesn't have the right color */
+button{
+    width: 100%;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+form p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(246, 25%, 77%);
+}
+
+form span {
+    font-size: 12px;
+    color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 760px){
+
+    .container{
+        flex-wrap: wrap;
+        padding: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form{
+        margin-bottom: 50px;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

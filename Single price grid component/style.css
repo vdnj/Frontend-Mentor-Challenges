@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    font-family:'Karla', sans-serif ;
+}
+
+body{
+    background-color: hsl(204, 43%, 93%);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 15px;
+    line-height: 25px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.top{
+    width: 100%;
+    padding: 50px;
+    font-size: 16px;
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 40px;
+}
+
+h2{
+    color: hsl(71, 73%, 54%);
+}
+
+.top p{
+    color: hsl(218, 22%, 67%);
+}
+
+.bot-left, .bot-right{
+    color: white;
+}
+
+.bot-left{
+    width: 50%;
+    padding: 50px;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 15px;
+    font-size: 16px;
+}
+
+#price{
+    font-size: 30px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+#time{
+    opacity: 0.5;
+    vertical-align: middle;
+}
+
+button{
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color:hsl(71, 73%, 54%);
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+    border: none;
+    margin: 30px auto;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+.bot-right{
+    width: 50%;
+    padding: 50px;
+    background-color: hsl(179, 62%, 43%);
+    opacity: 0.7;
+    border-radius: 0 0 15px 0;
+    font-size: 16px;
+}
+
+.bot-right p{
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 760px){
+
+    .container{
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .bot-left, .bot-right{
+        width: 100%;
+    }
+
+    .bot-left{
+        border-radius: 0;
+    }
+
+    .bot-right{
+        border-radius: 0 0 15px 15px;
+    }
+
+
+}
