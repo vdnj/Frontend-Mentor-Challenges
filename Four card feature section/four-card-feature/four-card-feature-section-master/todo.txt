@@ -1,0 +1,2 @@
+Tester sans le *{border-sizing}
+        sans le margin 0 du h1
