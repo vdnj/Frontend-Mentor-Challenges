@@ -16,16 +16,17 @@
   <header>
     <h2>Our Pricing</h2>
     <div class="toggle">
-      <p>Annually</p>
+      <span style="margin: 0.8em;">Annually</span>
       <label class="switch">
-        <input type="checkbox" id="switch"><div></div>
+        <input type="checkbox" id="checbox" onclick="check()" ; />
+        <span class="slider round"></span>
       </label>
-      <p>Monthly</p>
-    </div>
+      <span style="margin: 0.8em;">Monthly</span></div>
+  </div>
   </header>
 
   <div class="container">
-    <div class="box side">
+    <div class="box left">
       <h3>Basic</h3>
       <h1 class="annually">&dollar;199.99</h1>
       <h1 class="monthly">&dollar;19.99</h1>
@@ -34,7 +35,7 @@
       <div class="trait"></div>
       <p>2 Users Allowed</p>
       <div class="trait"></div>
-      <p>Send up to 3 GB/p>
+      <p>Send up to 3 GB</p>
       <div class="trait"></div>
       <button>Learn More</button>
     </div>
@@ -53,7 +54,7 @@
       <button>Learn More</button>
     </div>
 
-    <div class="box side">
+    <div class="box right">
       <h3>Master</h3>
       <h1 class="annually">&dollar;399.99</h1>
       <h1 class="monthly">&dollar;39.99</h1>
@@ -70,5 +71,6 @@
 
   <img src="./images/bg-bottom.svg" alt="bg-bottom" id="bg-bot">
 
+  <script src="./script.js"></script>
 </body>
 </html>
