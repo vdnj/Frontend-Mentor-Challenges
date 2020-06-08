@@ -1,0 +1,107 @@
+/*  General  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root{
+    --linear-gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+    --very-light-grayish-blue: hsl(240, 78%, 98%);
+    --light-grayish-blue: hsl(234, 14%, 74%);
+    --grayish-blue: hsl(233, 13%, 49%);
+    --dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border;
+    font-family: "Montserrat";
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background-color: var(--very-light-grayish-blue);
+}
+
+#bg-top, #bg-bot{
+    position: absolute;
+}
+
+#bg-top{
+    top: 0;
+    right: 0;
+}
+
+#bg-bot{
+    bottom: 0;
+    left: 0;
+}
+
+/*  Header  */
+header{
+    margin-top: 40px;
+}
+
+h2{
+    color: var(--grayish-blue);
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.toggle {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.toggle p {
+    margin: 2px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    color: var(--light-grayish-blue);
+}
+
+.switch input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.switch {
+    display: inline-block;
+    font-size: 20px;
+    height: 1em;
+    width: 2em;
+    background-color: var(--linear-gradient);
+    border-radius: 1em;
+}
+
+.switch div {
+    height: 0.80em;
+    width: 0.80em;
+    border-radius: 1em;
+    box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+    transition: all 300ms;
+    margin: 2px auto 0 4px;
+    cursor: pointer;
+}
+
+.switch input:checked + div {
+    transform: translate3d(100%, 0, 0);
+}
+
+/*  Container  */
+.container{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.monthly{
+    display: none;
+}
