@@ -1,0 +1,3 @@
+Make it responsive
+Add animation for the counter
+Put padding in % on assets sections instead of px

@@ -1,0 +1,461 @@
+
+/*  GENERAL  */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.intro, .assets-container, .cta, footer{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.intro, .assets, .cta{
+    color: var(--very-dark-cyan);
+}
+
+button{
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+}
+
+.bg{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+
+/*  HEADER  */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 70px;
+}
+
+header img{
+    height: fit-content;
+    width: auto;
+}
+
+#free{
+    color: var(--pink);
+    border: 1px solid var(--pink);
+    background-color: #fff;
+    font-size: 1em;
+    padding: 10px 25px;
+}
+
+
+/*  INTRO  */
+.intro{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+h1{
+    font-size: 3em;
+}
+
+.intro p{
+    width: 60%;
+    margin: 30px auto;
+    font-size: 1.1em;
+}
+
+.cta-btn{
+    color: white;
+    background-color: var(--pink);
+    font-size: 1.1em;
+    padding: 15px 75px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    display: block;
+    margin: 0 auto;
+}
+
+#screens{
+    max-width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+
+.num-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.box{
+    width: fit-content;
+    text-align: start;
+}
+
+.box p{
+    margin:0 auto;
+    text-align: center;
+    width: auto;
+    opacity: 0.5;
+}
+
+.big p{
+    font-size: 5.5em;
+    font-weight: 700;
+    opacity: 1;
+}
+
+#bg-1{
+    bottom: -2px;
+}
+
+#bg-1-mob{
+    display: none;
+}
+
+
+/*  CONTAINERS  */
+
+.assets-container{
+    display: flex;
+    flex-direction: row;
+    background-color: #B000B5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description, .illustration{
+    width: 45%;
+}
+
+h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.assets-container p {
+    font-size: 0.9em;
+    line-height: 25px;
+}
+
+.illustration img{
+    max-width: 80%;
+    height: auto;
+}
+
+  /*  -   together  */
+
+.together, .users{
+    background-color: var(--very-pale-blue);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+  /*  -  conversations */
+
+.conversations{
+    position: relative;
+    background-color: white;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+
+#bg-2{
+    top: 0;
+}
+
+#bg-2-mob{
+    display: none;
+}
+
+#bg-3{
+    bottom: -2px;
+}
+
+#bg-3-mob{
+    display: none;
+}
+
+
+/*  CALL-TO-ACTION  */
+.cta{
+    padding-top: 300px;
+    padding-bottom: 300px;
+    position: relative;
+    text-align: center;
+}
+
+#bg-4{
+    top: 0;
+}
+
+#bg-4-mob{
+    display: none;
+}
+
+#bg-5{
+    bottom: -1px;
+}
+
+#bg-5-mob{
+    display: none;
+}
+
+
+/*  FOOTER  */
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--very-dark-cyan);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.contact, .news{
+    width: 50%;
+}
+
+.desc{
+    margin: 30px 0;
+    padding-right: 40%;
+}
+
+.info{
+    display: flex;
+}
+
+.info *{
+    margin: 5px 5px;
+}
+
+.info img{
+    height: fit-content;
+}
+
+h3{
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+input{
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+#sub{
+    width: 150px;
+    height: 40px;
+    margin: 0 20px;
+    border-radius: 5px;
+    background-color: var(--pink);
+    color: #FFF;
+}
+
+.social{
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.fab{
+    font-size: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.fa-instagram{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/*  MOBILE  */
+
+@media only screen and (max-width: 720px){
+
+    html{
+        width: 100vw;
+    }
+
+    .intro, .assets-container, .cta, footer{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    /* BACKGROUNDS */
+    /* (possibilité de faire plus simple en mettant les displays sur 2 classes différentes (mob et desk)*/
+    #bg-1{
+        display: none;
+    }
+    
+    #bg-1-mob{
+        bottom: -2px;
+        display: block;
+    }
+
+    #bg-2{
+        display: none;
+    }
+    
+    #bg-2-mob{
+        top: 0;
+        display: block;
+    }
+    
+    #bg-3{
+        display: none;
+    }
+    
+    #bg-3-mob{
+        bottom: -2px;
+        display:block;
+    }
+
+    #bg-4{
+        display: none;
+    }
+    
+    #bg-4-mob{
+        top: 0;
+        display: block;
+    }
+    
+    #bg-5{
+        display: none;
+    }
+    
+    #bg-5-mob{
+        bottom: -1px;
+        display: block;
+    }
+
+    /* HEADER */
+    header{
+        padding: 30px;
+    }
+
+    header img{
+        height: 25px;
+        width: auto;
+        align-self: center;
+    }
+
+    /* INTRO */
+    .intro p{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    .cta-btn{
+        width: 70%;
+        font-size: 0.8em;
+        padding: 10px;
+    }
+
+    .num-container{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    p.big{
+        font-size: 4em;
+        font-weight: 700;
+        opacity: 1;
+    }
+
+    /* CONTAINERS */
+    .assets-container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .description, .illustration{
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    h2{
+        font-size: 1.7em;
+    }
+
+    .conversations{
+        flex-direction: column;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    /* FOOTER */
+    footer{
+        flex-direction: column-reverse;
+    }
+
+    .contact, .news{
+        width: 100%;
+    }
+
+    .desc{
+        padding-right: 0;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    #sub{
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 50%;
+    }
+
+    .contact{
+        padding-top: 100px;
+    }
+
+    ul{
+        margin-bottom: 20px;
+    }
+
+}
